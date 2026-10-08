@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111827">
+<title>Photo of the Day</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+  <header>
+    <p class="eyebrow">PHOTO OF THE DAY</p>
+    <h1 id="dateTitle">Today’s photo</h1>
+    <p id="status" class="status">Choosing today’s photo…</p>
+  </header>
+  <section class="photo-card" aria-label="Photo of the day">
+    <div class="photo-wrap">
+      <img id="dailyPhoto" alt="Photo of the day" decoding="async">
+      <div id="backupBadge" class="backup-badge" hidden>Backup photo</div>
+    </div>
+    <div class="actions">
+      <button id="saveBtn" type="button">💾 Save to device</button>
+      <button id="shareBtn" type="button">↗ Share</button>
+    </div>
+  </section>
+  <p class="note">The daily photo is randomly assigned once per year and won’t be selected again that year.</p>
+</main>
+<script src="photos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
